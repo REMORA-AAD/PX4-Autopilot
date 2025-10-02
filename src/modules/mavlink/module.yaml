@@ -1,4 +1,4 @@
-__max_num_config_instances: &max_num_config_instances 3
+__max_num_config_instances: &max_num_config_instances 4
 
 module_name: MAVLink
 serial_config:
@@ -44,7 +44,7 @@ serial_config:
         # 0: Telem1 Port (Telemetry Link)
         # 1: Telem2 Port (Companion Link). Disabled by default to reduce RAM usage
         # 2: Board-specific / no fixed function or port
-        default: [TEL1, "", ""]
+        default: [TEL1, "", "", ""]
       num_instances: *max_num_config_instances
       supports_networking: true
 

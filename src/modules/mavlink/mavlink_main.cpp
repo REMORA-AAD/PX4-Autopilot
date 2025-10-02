@@ -1723,6 +1723,7 @@ Mavlink::configure_streams_to_default(const char *configure_single_stream)
 		break;
 
 	case MAVLINK_MODE_MINIMAL:
+		configure_stream_local("RC_CHANNELS", 50.0f);
 		configure_stream_local("ALTITUDE", 0.5f);
 		configure_stream_local("ATTITUDE", 10.0f);
 		configure_stream_local("EXTENDED_SYS_STATE", 0.1f);
@@ -1730,7 +1731,6 @@ Mavlink::configure_streams_to_default(const char *configure_single_stream)
 		configure_stream_local("GPS_RAW_INT", 0.5f);
 		configure_stream_local("HOME_POSITION", 0.1f);
 		configure_stream_local("NAMED_VALUE_FLOAT", 1.0f);
-		configure_stream_local("RC_CHANNELS", 0.5f);
 		configure_stream_local("SYS_STATUS", 0.1f);
 		configure_stream_local("VFR_HUD", 1.0f);
 
